@@ -2,6 +2,7 @@ version: 2.1
 orbs:
   ruby: circleci/ruby@1.1.2
   node: circleci/node@2
+  coveralls: coveralls/coveralls@1.0.6
   heroku: circleci/heroku@0.0.10
 jobs:
   build:
@@ -60,6 +61,7 @@ jobs:
           command: bundle exec rails db:schema:load --trace
       # Run rspec in parallel
       - ruby/rspec-test
+      - coveralls/upload
 
   deploy:
     executor: heroku/default
