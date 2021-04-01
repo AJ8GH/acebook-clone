@@ -1,10 +1,9 @@
 feature 'updating own posts' do
 
-  xscenario 'user can update their own posts' do
+  scenario 'user can update their own posts' do
     sign_up_as_testy
 
-    click_link('New post')
-    fill_in('Message', with: 'test post')
+    fill_in('post_message', with: 'test post')
     click_button('Submit')
     expect(page).to have_content('test post')
 
