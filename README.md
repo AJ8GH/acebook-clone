@@ -3,6 +3,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/2a690f4718c1d5ffe6e2/maintainability)](https://codeclimate.com/github/AJ8GH/acebook-clone/maintainability)
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
 [![AJ8GH](https://circleci.com/gh/AJ8GH/acebook-clone.svg?style=shield)](https://app.circleci.com/pipelines/github/AJ8GH/acebook-clone)
+[![Build Status](https://travis-ci.com/AJ8GH/acebook-clone.svg?branch=master)](https://travis-ci.com/AJ8GH/acebook-clone)
 
 ## Beta Version
 
