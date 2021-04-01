@@ -77,3 +77,10 @@ web-console (>= 3.3.0)
 ```
 
 [You can find the engineering project outline here.](https://github.com/makersacademy/course/tree/master/engineering_projects/rails)
+
+
+Planning:
+
+[Miro board mock up](https://miro.com/app/board/o9J_lN6jG0E=/)
+
+![mock-up](style-mockup.png)
