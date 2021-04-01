@@ -1,6 +1,14 @@
 require 'simplecov'
 # SimpleCov.start 'rails' # lets only uncomment this if we need to
-SimpleCov.start
+SimpleCov.start do
+  add_filter 'spec/'
+  add_filter 'storage/'
+  add_filter 'public/'
+  add_filter 'lib/'
+  add_filter 'db/'
+  add_filter 'tmp/'
+  add_filter 'bin/'
+end
 
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV['RAILS_ENV'] ||= 'test'
@@ -34,6 +42,8 @@ RSpec.configure do |config|
   # Devise helper methods for controller specs
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.include Devise::Test::ControllerHelpers, type: :view
+  config.include ControllerHelpers, type: :controller
+
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"

@@ -12,6 +12,5 @@ class AddCachedLikesToPosts < ActiveRecord::Migration[6.0]
 
     # Uncomment this line to force caching of existing votes
     # Post.find_each(&:update_cached_votes)
-
   end
 end

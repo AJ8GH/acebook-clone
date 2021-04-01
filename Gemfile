@@ -20,8 +20,8 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
 
-gem 'mimemagic', '~> 0.3.8'
 gem 'acts_as_votable'
+gem 'mimemagic', '~> 0.3.8'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -39,6 +39,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'coveralls_reborn', '~> 0.21.0', require: false
+  gem 'factory_bot_rails'
   gem 'rspec_junit_formatter'
   gem 'rspec-rails', '~> 4.0'
   gem 'selenium-webdriver'
@@ -59,4 +60,4 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'devise', '~> 4.7'
 
-gem "jquery-rails", "~> 4.4"
+gem 'jquery-rails', '~> 4.4'

@@ -25,7 +25,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
     @user.avatar.attach(params[:avatar])
   end
 
-
   # DELETE /resource
   # def destroy
   #   super

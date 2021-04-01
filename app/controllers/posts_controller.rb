@@ -51,9 +51,9 @@ class PostsController < ApplicationController
 
   def like
     @post = Post.find_by(id: params[:id])
-    if params[:format] == "like"
+    if params[:format] == 'like'
       @post.liked_by current_user
-    elsif params[:format] == "unlike"
+    elsif params[:format] == 'unlike'
       @post.unliked_by current_user
     end
   end
@@ -67,12 +67,12 @@ class PostsController < ApplicationController
   def validate_edit
     if current_user.id != @post.user_id
       redirect_to posts_url, notice: "Oops, that's not your post!"
-      return false
+      false
     elsif @post.update_time_check == false
-      redirect_to posts_url, notice: "Post is older than 10 minutes"
-      return false
+      redirect_to posts_url, notice: 'Post is older than 10 minutes'
+      false
     else
-      return true
+      true
     end
   end
 end

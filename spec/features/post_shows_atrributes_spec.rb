@@ -4,7 +4,7 @@ feature 'showing posts attributes' do
     page.find('#post_message', visible: :all)
     fill_in 'post_message', with: 'Hello, world!'
     click_button 'Submit'
-    expect(page).to have_selector("#name", text: "Testy Testerson")
+    expect(page).to have_selector('#name', text: 'Testy Testerson')
   end
 
   scenario 'post shows time created' do
@@ -14,6 +14,6 @@ feature 'showing posts attributes' do
     fill_in 'post_message', with: 'Hello, world!'
     click_button 'Submit'
 
-    expect(page).to have_selector("#date", text: 'less than a minute')
+    expect(page).to have_selector('#date', text: 'less than a minute')
   end
 end

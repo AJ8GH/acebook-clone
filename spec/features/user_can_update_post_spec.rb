@@ -1,5 +1,4 @@
 feature 'updating own posts' do
-
   scenario 'user can update their own posts' do
     sign_up_as_testy
 
@@ -23,10 +22,10 @@ feature 'updating own posts' do
     click_button('Submit')
     expect(page).to have_content('test post')
 
-    click_link("sign-out-button")
+    click_link('sign-out-button')
 
     sign_up_as_specy
 
-    expect(page).not_to have_button "Update"
+    expect(page).not_to have_button 'Update'
   end
 end
