@@ -1,7 +1,8 @@
 # AceBook
-[![Maintainability](https://api.codeclimate.com/v1/badges/394792d5ea375ab45585/maintainability)](https://codeclimate.com/github/jgumoes/acebook-loungin-lizards/maintainability)
-[![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop) [![jgumoes](https://circleci.com/gh/jgumoes/acebook-loungin-lizards.svg?style=shield)](https://app.circleci.com/pipelines/github/jgumoes/acebook-loungin-lizards)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/2a690f4718c1d5ffe6e2/maintainability)](https://codeclimate.com/github/AJ8GH/acebook-clone/maintainability)
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
+[![AJ8GH](https://circleci.com/gh/AJ8GH/acebook-clone.svg?style=shield)](https://app.circleci.com/pipelines/github/AJ8GH/acebook-clone)
 
 ## Beta Version
 
@@ -77,7 +78,6 @@ web-console (>= 3.3.0)
 ```
 
 [You can find the engineering project outline here.](https://github.com/makersacademy/course/tree/master/engineering_projects/rails)
-
 
 Planning:
 

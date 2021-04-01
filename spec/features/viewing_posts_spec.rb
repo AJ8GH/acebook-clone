@@ -7,7 +7,6 @@ feature 'viewing posts' do
     fill_in 'post_message', with: 'Test post 1!'
     click_button 'Submit'
 
-   
     fill_in 'post_message', with: 'Test post 2!'
     click_button 'Submit'
 

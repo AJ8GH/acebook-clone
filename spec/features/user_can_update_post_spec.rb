@@ -2,7 +2,7 @@ feature 'updating own posts' do
 
   xscenario 'user can update their own posts' do
     sign_up_as_testy
-    
+
     click_link('New post')
     fill_in('Message', with: 'test post')
     click_button('Submit')
@@ -15,7 +15,7 @@ feature 'updating own posts' do
     expect(page).not_to have_content('test post')
     expect(page).to have_content('new post')
   end
-  
+
   scenario 'user can update their own posts up to 10 minutes'
 
   scenario "user can't update their own posts after 10 minutes"
