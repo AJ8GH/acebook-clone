@@ -13,11 +13,11 @@
         </ul>
 
         <span class="btn btn-outline-info", id="edit-profile">
-          <%= link_to "Edit Profile", edit_user_registration_path, :class => "btn" %>
+          <%= link_to "Edit Profile", edit_user_registration_path, class: "btn" %>
         </span>
 
         <span class="btn btn-outline-info", id="sign-out">
-          <%= link_to "Sign out", destroy_user_session_path, method: :delete, :class => "btn" %>
+          <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "btn" %>
         </span>
 
         <div class="dropdown">
@@ -26,11 +26,11 @@
           </button>
           <div class="dropdown-menu dropdown-menu-right header">
             <span class="dropdown-button btn btn-outline-info header">
-              <%= link_to "Edit Profile", edit_user_registration_path, :class => "btn" %>
+              <%= link_to "Edit Profile", edit_user_registration_path, class: "btn", id: "edit-button" %>
             </span>
 
             <span class="dropdown-button btn btn-outline-info header">
-              <%= link_to "Sign out", destroy_user_session_path, method: :delete, :class => "btn", :id => "sign-out-button" %>
+              <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "btn", id: "sign-out-button" %>
             </span>
           </div>
         </div>

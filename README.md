@@ -4,6 +4,7 @@
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
 [![AJ8GH](https://circleci.com/gh/AJ8GH/acebook-clone.svg?style=shield)](https://app.circleci.com/pipelines/github/AJ8GH/acebook-clone)
 [![Build Status](https://travis-ci.com/AJ8GH/acebook-clone.svg?branch=master)](https://travis-ci.com/AJ8GH/acebook-clone)
+[![Coverage Status](https://coveralls.io/repos/github/AJ8GH/acebook-clone/badge.svg?branch=master)](https://coveralls.io/github/AJ8GH/acebook-clone?branch=master)
 
 ## Beta Version
 

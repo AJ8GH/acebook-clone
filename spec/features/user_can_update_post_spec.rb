@@ -17,7 +17,6 @@ feature 'updating own posts' do
   scenario "users can't edit other peoples posts" do
     sign_up_as_testy
 
-    page.find('#post_message', visible: :all)
     fill_in('post_message', with: 'test post')
     click_button('Submit')
     expect(page).to have_content('test post')

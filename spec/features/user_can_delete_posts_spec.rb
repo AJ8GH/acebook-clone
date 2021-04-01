@@ -2,7 +2,6 @@ feature 'deleting own posts' do
   scenario 'users can delete their own posts' do
     sign_up_as_testy
 
-    page.find('#post_message', visible: :all)
     fill_in('post_message', with: 'test post')
     click_button('Submit')
 
