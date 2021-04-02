@@ -10,7 +10,7 @@
 
 Checkout the beta version of AceBook - deployed here via Heroku and Circle CI:
 
-[AceBook](https://aqueous-thicket-94433.herokuapp.com/)
+[AceBook](https://rhubarb-tart-43037.herokuapp.com/)
 -------------------------------------------------------
 
 ## Getting Started
@@ -18,13 +18,13 @@ Checkout the beta version of AceBook - deployed here via Heroku and Circle CI:
 #### Clone the repository
 
 ```shell
-git clone https://github.com/jgumoes/acebook-loungin-lizards
+git clone git@github.com:AJ8GH/acebook-clone.git
 ```
 
 #### Install dependencies
 
 ```shell
-cd acebook-loungin-lizards
+cd acebook-clone
 bundle install
 ```
 
@@ -55,10 +55,13 @@ bundle exec rspec -fd
 ## Development Dependencies
 
 ```
+acts_as_votable
 byebug
 capybara (~> 2.13)
+coveralls_reborn (~> 0.21.0)
 devise (~> 4.7)
 dotenv
+factory_bot_rails
 jbuilder (~> 2.5)
 jquery-rails (~> 4.4)
 listen (>= 3.0.5, < 3.2)
@@ -79,7 +82,7 @@ uglifier (>= 1.3.0)
 web-console (>= 3.3.0)
 ```
 
-[You can find the engineering project outline here.](https://github.com/makersacademy/course/tree/master/engineering_projects/rails)
+You can find the [engineering project outline](https://github.com/makersacademy/course/tree/master/engineering_projects/rails) here.
 
 Planning:
 
