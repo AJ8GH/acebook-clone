@@ -22,7 +22,7 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find_by(id: params[:id])
-    if validate_edit == true # hopefully this will stop people from editing through an API POST request
+    if validate_edit == true
       @post.update(message: params[:post])
       redirect_to posts_url
     end
@@ -32,17 +32,7 @@ class PostsController < ApplicationController
     @post = Post.find_by(id: params[:id])
 
     if current_user.id != @post.user_id
-      # this will work, but refreshes the page and puts the message at the top
       redirect_to posts_url, notice: "Oops, that's not your post!"
-      # # this could work, but needs to be extracted and drawn on the post
-      # flash.now[:alert] = {post: params[:id], message: "Oops, that's not your post!"}
-      # print("flash hash: "); puts(flash[:alert])
-
-      # we could also skip this statement, by validating the from in JS
-      # i.e. when the user logs in, we add their user id to the cookies,
-      # we add the creater's id to post, and we have a javascript function
-      # that checks the user_id === create_id when the button is clicked
-      # https://stackoverflow.com/questions/29737384/accessing-current-user-variable-from-application-js-in-rails-3
     else
       @post.destroy
       redirect_to posts_url
@@ -68,7 +58,7 @@ class PostsController < ApplicationController
     if current_user.id != @post.user_id
       redirect_to posts_url, notice: "Oops, that's not your post!"
       false
-    elsif @post.update_time_check == false
+    elsif !@post.created_ten_minutes_ago?
       redirect_to posts_url, notice: 'Post is older than 10 minutes'
       false
     else

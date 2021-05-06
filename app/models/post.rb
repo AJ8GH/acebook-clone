@@ -3,7 +3,7 @@ class Post < ApplicationRecord
 
   acts_as_votable
 
-  def update_time_check
+  def created_ten_minutes_ago?
     Time.now.to_i < created_at.since(600).to_i
   end
 end
