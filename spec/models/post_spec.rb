@@ -11,5 +11,12 @@ RSpec.describe Post, type: :model do
       post = Post.create(created_at: Time.now)
       expect(post).to be_less_than_ten_minutes_old
     end
+
+    it 'returns false when created more than 10 minutes ago' do
+      post = Post.create(created_at: Time.now)
+      Timecop.freeze(Time.now + 600)
+
+      expect(post).not_to be_less_than_ten_minutes_old
+    end
   end
 end
