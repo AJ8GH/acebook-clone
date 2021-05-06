@@ -14,7 +14,16 @@ Checkout the beta version of AceBook - deployed here via Heroku and Circle CI:
 [AceBook](https://rhubarb-tart-43037.herokuapp.com/)
 -------------------------------------------------------
 
+Acebook is a 2 week Engineering project, to build a clone of Facebook using Ruby on Rails
+
 ## Getting Started
+
+***Required:***
+- To run acebook on your local machine you will need Ruby 2.7.2 installed.
+- We recommend installing a version manager such as RVM, and using this to install version 2.7.2
+- We are using PostgreSQL as our database software so you will also need this installed, as well as PSQL
+- Bundler for managing gems
+- Once you have these prerequisites installed you can follow the set up guide below:
 
 #### Clone the repository
 
