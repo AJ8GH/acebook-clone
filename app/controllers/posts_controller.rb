@@ -58,7 +58,7 @@ class PostsController < ApplicationController
     if current_user.id != @post.user_id
       redirect_to posts_url, notice: "Oops, that's not your post!"
       false
-    elsif !@post.created_ten_minutes_ago?
+    elsif !@post.less_than_ten_minutes_old?
       redirect_to posts_url, notice: 'Post is older than 10 minutes'
       false
     else
