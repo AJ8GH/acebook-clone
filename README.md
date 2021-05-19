@@ -7,11 +7,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/2a690f4718c1d5ffe6e2/maintainability)](https://codeclimate.com/github/AJ8GH/acebook-clone/maintainability)
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
 
-## Beta Version
-
-Checkout the beta version of AceBook - deployed here via Heroku and Circle CI:
-
-[AceBook](https://rhubarb-tart-43037.herokuapp.com/)
 -------------------------------------------------------
 
 Acebook is a 2 week Engineering project, to build a clone of Facebook using Ruby on Rails
