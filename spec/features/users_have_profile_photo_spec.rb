@@ -11,8 +11,3 @@ feature 'profile photos' do
     expect(page).to have_css('img[src*="profile_photo.png"]')
   end
 end
-
-#
-#     expect(page).to have_content('Llama')
-#     expect(current_path).to eq('/posts')
-#   end
