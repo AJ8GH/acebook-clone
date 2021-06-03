@@ -5,15 +5,16 @@ RSpec.describe PostsController, type: :controller do
     it 'responds with 200' do
       user = create(:user)
       sign_in(user)
+
       get :new
+
       expect(response).to have_http_status(200)
     end
   end
 
   describe 'POST /' do
-    it 'responds with 200' do
+    it 'creates a post' do
       user = create(:user)
-
       sign_in(user)
 
       expect do
@@ -27,11 +28,11 @@ RSpec.describe PostsController, type: :controller do
   end
 
   describe 'DESTROY' do
-    it 'responds with 200 when user id matches post user id' do
+    it 'Deletes a post when user id matches post user id' do
       user = create(:user)
-      post = create(:post, user: user)
-
       sign_in(user)
+
+      post = create(:post, user: user)
 
       expect do
         delete :destroy, params: { id: post.id, user_id: user.id }
@@ -42,11 +43,28 @@ RSpec.describe PostsController, type: :controller do
   describe 'GET /' do
     it 'responds with 200' do
       user = create(:user)
-
-      allow(user).to receive(:id) { 1 }
       sign_in(user)
+
       get :index
+
       expect(response).to have_http_status(200)
+    end
+  end
+
+  describe 'Update' do
+    it 'updates post info when user id matches post user id' do
+      user = create(:user)
+      sign_in(user)
+
+      post = create(:post, user: user)
+
+      expect(post.message).to eq('Test post')
+
+      patch :update, params: { id: post.id, user_id: user.id, post: 'New message' }
+
+      edited_post = Post.find_by(id: post.id)
+
+      expect(edited_post.message).to eq('New message')
     end
   end
 end
